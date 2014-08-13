@@ -40,15 +40,11 @@
                   android:textStyle="bold"
                   android:paddingLeft="10dp"/>
 
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textMultiLine"
-                android:ems="10"
-                android:id="@+id/comment"
-                android:layout_below="@+id/msj"
-                android:layout_alignParentLeft="true"
-                android:lines="4"/>
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/hola"
+                  android:lines="5"/>
 
         <Button
                 android:layout_width="match_parent"

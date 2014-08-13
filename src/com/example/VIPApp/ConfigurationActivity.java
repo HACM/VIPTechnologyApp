@@ -20,13 +20,13 @@ import java.lang.reflect.Type;
  */
 public class ConfigurationActivity extends Activity {
 
-    Usuario usuario = new Usuario();
-    File archivo;
-    String path;
-    PrintWriter fileOut = null;
+    private Usuario usuario = new Usuario();
+    private File archivo;
+    private String path;
+    private PrintWriter fileOut = null;
     public static String USERFILE = "config_vip";
     private BufferedReader fileIn;
-    Toast toast;
+    private Toast toast;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -108,33 +108,12 @@ public class ConfigurationActivity extends Activity {
     //guarda los datos de configuración en un JSON
     public void guardarDatos() throws IOException {
 
-
         fileOut = new PrintWriter(new FileWriter(archivo));
-
-
-        //outputStream = openFileOutput(USERFILE, getApplicationContext().MODE_PRIVATE);
         Gson gson = new Gson();
         String json = gson.toJson(usuario);
-        //outputStream.write(json.getBytes());
-        //outputStream.close();
         fileOut.println(json);
         fileOut.close();
 
-
     }
 
-    public File getTempFile(Context context, String url) {
-        File file = null;
-
-        try {
-
-            String fileName = Uri.parse(url).getLastPathSegment();
-            file = File.createTempFile(fileName, null, getApplicationContext().getCacheDir());
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return file;
-    }
 }

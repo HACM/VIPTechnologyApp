@@ -7,15 +7,15 @@ import java.sql.Date;
  */
 public class Mensaje {
 
-    private Date fecha;
+    private String fecha;
     private String comment;
     private Usuario usr;
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
