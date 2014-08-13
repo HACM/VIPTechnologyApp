@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nav_options">
+
+        <item>Catálogo</item>
+        <item>Novedades</item>
+        <item>Dejanos un Mensaje</item>
+        <item>Configuración</item>
+
+    </string-array>
+    
+    <array name="navigation_icon">
+
+        <item>@drawable/product</item>
+        <item>@drawable/news</item>
+        <item>@drawable/message</item>
+        <item>@drawable/conf</item>
+
+    </array>
+
+</resources>

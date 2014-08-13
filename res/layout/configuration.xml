@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp">
+    <TextView
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Configuración"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="5dp"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:background="#C6C6C6"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp"/>
+
+    <TextView
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nombre de Usuario"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"/>
+
+    <TextView
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nombre de su Empresa"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/empresa"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"/>
+
+    <TextView
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Teléfono"
+            android:id="@+id/tele"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/phone"/>
+
+    <TextView
+
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="E-Mail"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/email"
+            android:layout_gravity="center_horizontal"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Configuración"
+            android:id="@+id/button"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="#ff027faa"
+            android:textColor="#ffffff"
+            android:onClick="savedata"/>
+
+</LinearLayout>
+
+</ScrollView>
